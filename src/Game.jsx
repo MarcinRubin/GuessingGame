@@ -69,7 +69,7 @@ const Game = ({phase, setPhase}) => {
     <div className="bottom_UI">
         <button className = "btn_main" disabled = {!isFlipped || !chanceCounter} onClick = {handleClick}>ANOTHER ({chanceCounter})</button>
         <p>{remainingTime}</p>
-        <button className = "btn_main" onClick = {handleReset}>GIVE UP</button>
+        <button className = "btn_main" onClick = {handleReset}>Give Up</button>
     </div>
     
     
