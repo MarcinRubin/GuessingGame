@@ -34,10 +34,6 @@ button{
   cursor: pointer;
 }
 
-.wrapper{
-  width: 100%;
-}
-
 .game{
   display: flex;
   flex-direction: column;
@@ -47,7 +43,7 @@ button{
 /*Flip card setup below*/
 .flip-card {
   background-color: transparent;
-  width: 420px;
+  width: 380px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
