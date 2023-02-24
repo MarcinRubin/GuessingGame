@@ -1,0 +1,562 @@
+[
+    {
+        "id": 1,
+        "author": "Zbigniew Wodecki",
+        "title": "Lubię wracać tam gdzie byłem już"
+    },
+    {
+        "id": 2,
+        "author": "Andrea Bocelli",
+        "title": "Time to say goodbye"
+    },
+    {
+        "id": 3,
+        "author": "Eugeniusz Bodo",
+        "title": "Sex Appeal to nasza broń kobieca"
+    },
+    {
+        "id": 4,
+        "author": "Edyta Gepperd",
+        "title": "Ja się nie skarżę na swój los"
+    },
+    {
+        "id": 5,
+        "author": "Stan Borys", 
+        "title": "Jaskółka uwięziona"
+    },
+    {
+        "id": 6,
+        "author": "Zbigniew Wodecki",
+        "title": "Zacznij od Bacha"
+    },
+    {
+        "id": 7,
+        "author": "The Animals",
+        "title": "House of the raising sun"
+    },
+    {
+        "id": 8,
+        "author": "Marek Grechuta",
+        "title": "Nie dokazuj"
+    },
+    {
+        "id": 9,
+        "author": "Bajm",
+        "title": "Co mi Panie dasz"
+    },
+    {
+        "id": 10,
+        "author": "Kaczmarski",
+        "title": "Obława"
+    },
+    {
+        "id": 11,
+        "author": "Edyta Górniak, Mietek Szcześniak",
+        "title": "Dumka na dwa serca"
+    },
+    {
+        "id": 12,
+        "author": "Robert Gawliński",
+        "title": "Nie stało się nic"
+    },
+    {
+        "id": 13,
+        "author": "Lady Punk",
+        "title": "Kryzysowa narzeczona"
+    },
+    {
+        "id": 14,
+        "author": "Andrzej Zaucha",
+        "title": "Bądź moim natchnieniem"
+    },
+    {
+        "id": 15,
+        "author": "Manaam",
+        "title": "Kocham cię, kochanie moje"
+    },
+    {
+        "id": 16,
+        "author": "Alphaville",
+        "title": "Forever Young"
+    },
+    {
+        "id": 17,
+        "author": "Czerwone Gitary",
+        "title": "Ciagle pada"
+    },
+    {
+        "id": 18,
+        "author": "Kombi",
+        "title": "Nasze randez-vouz"
+    },
+    {
+        "id": 19,
+        "author": "Alicja Majewska",
+        "title": "Odkryjemy miłość nieznaną"
+    },
+    {
+        "id": 20,
+        "author": "Urszula",
+        "title": "Konik na biegunach"
+    },
+    {
+        "id": 21,
+        "author": "Lombard",
+        "title": "Szklana pogoda"
+    },
+    {
+        "id": 22,
+        "author": "Seweryn Krajewski",
+        "title": "Uciekaj serce moje"
+    },
+    {
+        "id": 23,
+        "author": "Krzysztof Krawczyk",
+        "title": "Zatańczysz ze mną jeszcze raz"
+    },
+    {
+        "id": 24,
+        "author": "Elektryczne gitary",
+        "title": "Co ty tutaj robisz"
+    },
+    {
+        "id": 25,
+        "author": "Czesław Niemen",
+        "title": "Dziwny jest ten świat"
+    },
+    {
+        "id": 26,
+        "author": "Anna Jantar",
+        "title": "Tyle słońca w całym mieście"
+    },
+    {
+        "id": 27,
+        "author": "Nat King Cole",
+        "title": "When I fell in love"
+    },
+    {
+        "id": 28,
+        "author": "Stevie Wonder",
+        "title": "I just call to say I love you"
+    },
+    {
+        "id": 29,
+        "author": "Stachursky",
+        "title": "Typ niepokorny"
+    },
+    {
+        "id": 30,
+        "author": "Edyta Bartosiewicz, Krzysztof Krawczyk",
+        "title": "Trudno tak"
+    },
+    {
+        "id": 31,
+        "author": "Krystyna Prońko",
+        "title": "Jesteś lekiem na całe zło"
+    },
+    {
+        "id": 32,
+        "author": "Queen",
+        "title": "Don't stop me now"
+    },
+    {
+        "id": 33,
+        "author": "Mr. Zoob",
+        "title": "Mój jest ten kawałek podłogi"
+    },
+    {
+        "id": 34,
+        "author": "Edyta Bartosiewicz",
+        "title": "Ostatni"
+    },
+    {
+        "id": 35,
+        "author": "Marek grechuta",
+        "title": "Dni, których jeszcze nie znamy"
+    },
+    {
+        "id": 36,
+        "author": "Urszula Sipińska",
+        "title": "Cudownych rodziców mam"
+    },
+    {
+        "id": 37,
+        "author": "Hanka Ordonówna",
+        "title": "Miłość ci wszystko wybaczy"
+    },
+    {
+        "id": 38,
+        "author": "AHA",
+        "title": "Take on me"
+    },
+    {
+        "id": 39,
+        "author": "Ich Troje",
+        "title": "Wypijmy za to"
+    },
+    {
+        "id": 40,
+        "author": "Michał Bajor",
+        "title": "Ogrzej mnie"
+    },
+    {
+        "id": 41,
+        "author": "Simon and Garfunkel",
+        "title": "Bridge over troubled water"
+    },
+    {
+        "id": 42,
+        "author": "Bogusław Mec",
+        "title": "Jej portret"
+    },
+    {
+        "id": 43,
+        "author": "Beatles",
+        "title": "Let it be"
+    },
+    {
+        "id": 44,
+        "author": "Grechuta",
+        "title": "Będziesz moją Panią"
+    },
+    {
+        "id": 45,
+        "author": "Kalina Jędrusik",
+        "title": "Bo we mnie jest sex"
+    },
+    {
+        "id": 46,
+        "author": "Grzegorz Sojka",
+        "title": "Tolerancja"
+    },
+    {
+        "id": 47,
+        "author": "Piosenka Ludowa",
+        "title": "Hej bystra woda"
+    },
+    {
+        "id": 48,
+        "author": "Kayah & Bregovic",
+        "title": "Śpij kochanie, śpij"
+    },
+    {
+        "id": 49,
+        "author": "Piotr Rubik",
+        "title": "Niech mówią, że to nie jest miłość"
+    },
+    {
+        "id": 50,
+        "author": "Frank Sinatra",
+        "title": "My way"
+    },
+    {
+        "id": 51,
+        "author": "Perfect",
+        "title": "Autobiografia"
+    },
+    {
+        "id": 52,
+        "author": "Izabela Trojanowska",
+        "title": "Wszsytko czego dziś chcę"
+    },
+    {
+        "id": 53,
+        "author": "Michał Bajor",
+        "title": "Nie chcę więcej"
+    },
+    {
+        "id": 54,
+        "author": "Izabela Trojanowska",
+        "title": "Nic nie może przecież wiecznie trwać"
+    },
+    {
+        "id": 55,
+        "author": "Maanam",
+        "title": "Cykady na cykladach"
+    },
+    {
+        "id": 56,
+        "author": "George Michael",
+        "title": "Careles whisper"
+    },
+    {
+        "id": 55,
+        "author": "Varius Manx",
+        "title": "Orła cień"
+    },
+    {
+        "id": 57,
+        "author": "Lady Punk",
+        "title": "Zostawcie Titanica"
+    },
+    {
+        "id": 58,
+        "author": "Anna Jantar",
+        "title": "Tylko mnie poproś do tańca"
+    },
+    {
+        "id": 59,
+        "author": "Alicja Majewska",
+        "title": "Odkryjemy miłość nieznaną"
+    },
+    {
+        "id": 60,
+        "author": "Louis Armstrong",
+        "title": "Mack the knife"
+    },
+    {
+        "id": 61,
+        "author": "Britney Spears",
+        "title": "Toxic"
+    },
+    {
+        "id": 62,
+        "author": "Helena Frąckowiak",
+        "title": "Papierowy księżyc"
+    },
+    {
+        "id": 63,
+        "author": "Kaczmarski",
+        "title": "Sen Katarzyny II"
+    },
+    {
+        "id": 64,
+        "author": "Gabriel Fleszar",
+        "title": "Kroplą deszczu"
+    },
+    {
+        "id": 65,
+        "author": "Louis Armstrong",
+        "title": "On the sunny side of the street"
+    },
+    {
+        "id": 66,
+        "author": "Anna German",
+        "title": "Tańczące Eurydyki"
+    },
+    {
+        "id": 67,
+        "author": "Urszula",
+        "title": "Dmuchawce, latawce, wiatr"
+    },
+    {
+        "id": 68,
+        "author": "Coolio",
+        "title": "Gangsta Paradise"
+    },
+    {
+        "id": 69,
+        "author": "Sylwia Grzeszczak",
+        "title": "Zbudujemy nasz dom na piasku"
+    },
+    {
+        "id": 70,
+        "author": "Kayah",
+        "title": "Kiedyś byłam różą"
+    },
+    {
+        "id": 71,
+        "author": "Sylwia Grzeszczak",
+        "title": "Zbudujemy nasz dom na piasku"
+    },
+    {
+        "id": 72,
+        "author": "Krzysztof Krawczyk",
+        "title": "Mój przyjacielu"
+    },
+    {
+        "id": 73,
+        "author": "Akcent",
+        "title": "Przez twe oczy zielone"
+    },
+    {
+        "id": 74,
+        "author": "Anna Maria Jopek",
+        "title": "Ale jestem"
+    },
+    {
+        "id": 75,
+        "author": "Eiffel 65",
+        "title": "Blue"
+    },
+    {
+        "id": 76,
+        "author": "Edyta Górniak",
+        "title": "Jestem kobietą"
+    },
+    {
+        "id": 77,
+        "author": "Frank Sinatra",
+        "title": "Something stupid"
+    },
+    {
+        "id": 78,
+        "author": "Andrzej Piaseczny",
+        "title": "Prawie do nieba"
+    },
+    {
+        "id": 79,
+        "author": "Michał Bajor",
+        "title": "Nie opuszczaj mnie"
+    },
+    {
+        "id": 80,
+        "author": "Jeniffer Lopez",
+        "title": "Let's get loud"
+    },
+    {
+        "id": 81,
+        "author": "Elektryczne Gitary",
+        "title": "Dzieci"
+    },
+    {
+        "id": 82,
+        "author": "2 plus 1",
+        "title": "Windą do nieba"
+    },
+    {
+        "id": 83,
+        "author": "2 plus 1",
+        "title": "Chodź, pomaluj mój świat"
+    },
+    {
+        "id": 84,
+        "author": "Sława Przybylska",
+        "title": "Pamiętasz była jesień"
+    },
+    {
+        "id": 85,
+        "author": "T Love",
+        "title": "Chłopaki nie płaczą"
+    },
+    {
+        "id": 86,
+        "author": "Mchał Bajor",
+        "title": "Nie opuszczaj mnie"
+    },
+    {
+        "id": 87,
+        "author": "Masters",
+        "title": "Żono moja"
+    },
+    {
+        "id": 88,
+        "author": "Aqua",
+        "title": "Barbie girl"
+    },
+    {
+        "id": 89,
+        "author": "Leonard Cohen",
+        "title": "Hallelujah"
+    },
+    {
+        "id": 90,
+        "author": "Tadeusz Woźniak",
+        "title": "Zegarmistrz światła purpurowy"
+    },
+    {
+        "id": 91,
+        "author": "Frank Sinatra",
+        "title": "New York"
+    },
+    {
+        "id": 92,
+        "author": "Czesław Niemen",
+        "title": "Pod papugami"
+    },
+    {
+        "id": 93,
+        "author": "Bogusław Mec",
+        "title": "Jej portret"
+    },
+    {
+        "id": 94,
+        "author": "Madonna",
+        "title": "Like a prayer"
+    },
+    {
+        "id": 95,
+        "author": "Frank Sinatra",
+        "title": "The lady is a trump"
+    },
+    {
+        "id": 96,
+        "author": "Loona",
+        "title": "Bailando"
+    },
+    {
+        "id": 97,
+        "author": "Lombard",
+        "title": "Szklana pogoda"
+    },
+    {
+        "id": 98,
+        "author": "Beatles",
+        "title": "Let it bee"
+    },
+    {
+        "id": 99,
+        "author": "Lady Punk",
+        "title": "Zawsze tam gdzie ty"
+    },
+    {
+        "id": 100,
+        "author": "Edyta Górniak",
+        "title": "To nie ja"
+    },
+    {
+        "id": 101,
+        "author": "Biesiadne",
+        "title": "W zielonym gaji"
+    },
+    {
+        "id": 102,
+        "author": "Kaczmarski",
+        "title": "Nasza klasa"
+    },
+    {
+        "id": 103,
+        "author": "Michał Bajor",
+        "title": "Taka miłość w sam raz"
+    },
+    {
+        "id": 104,
+        "author": "Perfect",
+        "title": "Nie płacz Ewka"
+    },
+    {
+        "id": 105,
+        "author": "Eric Clapton",
+        "title": "Tears in Heaven"
+    },
+    {
+        "id": 106,
+        "author": "Edyta Gepperd",
+        "title": "Kocham cię życie"
+    },
+    {
+        "id": 107,
+        "author": "Dżem",
+        "title": "Czerwony jak cegła"
+    },
+    {
+        "id": 108,
+        "author": "Biesiadne",
+        "title": "Biały miś"
+    },
+    {
+        "id": 109,
+        "author": "Ricky Martin",
+        "title": "Livin' la vida loca"
+    },
+    {
+        "id": 110,
+        "author": "Krzysztof Krawczyk",
+        "title": "Parostatek"
+    },
+    {
+        "id": 111,
+        "author": "Natalia Oreiro",
+        "title": "Cambio Dolor"
+    }
+]

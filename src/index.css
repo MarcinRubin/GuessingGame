@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/*Flip card setup below*/
+.flip-card {
+  background-color: transparent;
+  width: 420px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-title{
+  height: 80px;
+}
+
+.flip-card-text{
+  height: 200px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+/*.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}*/
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flipped{
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 10px rgb(30, 44, 255) solid;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: dodgerblue;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  background-color: dodgerblue;
+  transform: rotateX(180deg);
+}
+
+.menu{
+  color: black;
+}
+
+.upper_UI, .bottom_UI{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.upper_UI > .btn_main, .bottom_UI > .btn_main{
+  padding: 10px;
+  width: 20%;
+  border-radius: 20px;
+  background-color: dodgerblue;
+  border: 5px rgb(30, 44, 255) solid;
+}
+
+.upper_UI > .btn_main:hover, .bottom_UI > .btn_main:hover{
+  background-color: rgb(30, 210, 255);
+}
+
+.bottom_UI > .btn_main{
+  width: 45%;
+}
+
+.bottom_UI > p{
+  color: black;
+  align-self: center;
+}
+
+button:hover{
+  background-color: rgb(30, 210, 255);
+}
+
+.btn_start{
+  padding: 10px;
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  transition: padding 100ms ease;
+}
+
+.songTitle{
+  color:white;
+  padding: 10px;
+}
+
+.songText{
+  padding: 10px;
+  color: white;
+}
