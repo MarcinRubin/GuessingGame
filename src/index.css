@@ -32,7 +32,6 @@ body{
 
 .wrapper{
   width: 320px;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +60,7 @@ button{
 }
 
 .flip-card-text{
-  height: 200px;
+  height: 300px;
 }
 
 /* This container is needed to position the front and back side */
@@ -127,6 +126,7 @@ button{
   width: 25%;
   border-radius: 20px;
   background-color: dodgerblue;
+  color: white;
   border: 5px rgb(30, 44, 255) solid;
 }
 
@@ -136,6 +136,11 @@ button{
 
 .bottom_UI > .btn_main{
   width: 45%;
+  color: white;
+}
+
+.bottom_UI > .btn_main:disabled{
+  color: rgba(255, 255, 255, 0.386);
 }
 
 .bottom_UI > p{
