@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "song": "Przybieżeli do betlejem pasterze. Grając skocznie dzieciąteczku na lirze. Chwała na wysokości, chwała na wysokości, a pokój na ziemi."
+        "song": "Przybieżeli </br> do betlejem pasterze. Grając skocznie dzieciąteczku na lirze. Chwała na wysokości, chwała na wysokości, a pokój na ziemi."
     },
     {
         "id": 2,
@@ -94,9 +94,5 @@
     {
         "id": 24,
         "song": "Niech żyje wolność, wolność i swoboda. Niech żyje zabawa i ddziewczyna młoda. Miała matka syna, syna jedynego. Chciała go wychować na pana wielkiego"
-    },
-    {
-        "id": 25,
-        "song": ""
     }
 ]

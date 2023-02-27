@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -21,29 +30,29 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body{
-  width: 100%;
-  height: 100vh;
-  background-color: white;
+.wrapper{
+  width: 320px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.game{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 button{
   cursor: pointer;
 }
 
-.game{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
 /*Flip card setup below*/
 .flip-card {
   background-color: transparent;
-  width: 380px;
+  width: 100%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -115,7 +124,7 @@ button{
 
 .upper_UI > .btn_main, .bottom_UI > .btn_main{
   padding: 10px;
-  width: 20%;
+  width: 25%;
   border-radius: 20px;
   background-color: dodgerblue;
   border: 5px rgb(30, 44, 255) solid;

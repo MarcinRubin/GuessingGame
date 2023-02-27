@@ -35,7 +35,7 @@ const Game = ({phase, setPhase}) => {
         if(!isFlipped) {
           setTimeout(()=>{
           setSongTitle(titles[Math.floor(Math.random() * titles.length)].title)
-          setSongText(texts[Math.floor(Math.random() * texts.length)].song)
+          setSongText(texts[Math.floor(Math.random() * texts.length)].song);
         }, FLIP_DURATION);
       }    
     }, [isFlipped])
@@ -69,7 +69,7 @@ const Game = ({phase, setPhase}) => {
     <div className="bottom_UI">
         <button className = "btn_main" disabled = {!isFlipped || !chanceCounter} onClick = {handleClick}>ANOTHER ({chanceCounter})</button>
         <p>{remainingTime}</p>
-        <button className = "btn_main" onClick = {handleReset}>Give Up</button>
+        <button className = "btn_main" onClick = {handleReset}>GIVE UP</button>
     </div>
     
     
