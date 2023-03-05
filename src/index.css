@@ -113,6 +113,9 @@ button{
 
 .menu{
   color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .upper_UI, .bottom_UI{
@@ -168,4 +171,34 @@ button:hover{
 .songText{
   padding: 10px;
   color: white;
+}
+
+p{
+  color: black;
+}
+
+.listOfAllSongs{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align:justify;
+}
+
+.listOfAllSongs > p:hover{
+  cursor: pointer;
+}
+
+.item_chosen{
+  background-color: aqua;
+}
+
+form > button{
+  color: black;
+}
+
+form > input{
+  color: black;
 }

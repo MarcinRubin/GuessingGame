@@ -1,10 +1,9 @@
-import texts from './resources/texts.json'
-import titles from './resources/titles.json'
+
 import { useState, useEffect } from 'react'
 import TitleCard from './TitleCard'
 import TextCard from './TextCard'
 
-const Game = ({phase, setPhase}) => {
+const Game = ({phase, setPhase, texts, title}) => {
 
     const FLIP_DURATION = 1000;
     const [songText, setSongText] = useState('');
@@ -34,7 +33,7 @@ const Game = ({phase, setPhase}) => {
     useEffect(() =>{
         if(!isFlipped) {
           setTimeout(()=>{
-          setSongTitle(titles[Math.floor(Math.random() * titles.length)].title)
+          setSongTitle(title[Math.floor(Math.random() * title.length)].title)
           setSongText(texts[Math.floor(Math.random() * texts.length)].song);
         }, FLIP_DURATION);
       }    
