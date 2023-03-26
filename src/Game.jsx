@@ -50,8 +50,8 @@ const Game = ({phase, setPhase, texts, title}) => {
 
 
   return (
-    <div className="game">
-      <div className = "upper_UI">
+    <div className="game_container">
+      <div className = "game_upper_UI">
         <button className="btn_main" onClick = {handlePause}>PAUSE</button>
         <button className="btn_main" onClick = {handleReset}>X</button>
       </div>
@@ -65,7 +65,7 @@ const Game = ({phase, setPhase, texts, title}) => {
       isFlipped = {isFlipped}
       cardTitle = "SONG TEXT"
     />
-    <div className="bottom_UI">
+    <div className="game_bottom_UI">
         <button className = "btn_main" disabled = {!isFlipped || !chanceCounter} onClick = {handleClick}>ANOTHER({chanceCounter})</button>
         <p>{remainingTime}</p>
         <button className = "btn_main" onClick = {handleReset}>GIVE UP</button>

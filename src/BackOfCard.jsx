@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BackTitleCard = ({songText}) => {
+const BackOfCard = ({songText}) => {
   return (
     <div className='flip-card-back'>
       <p className="songText" >{songText}</p>
@@ -8,4 +8,4 @@ const BackTitleCard = ({songText}) => {
   )
 }
 
-export default BackTitleCard
+export default BackOfCard

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FrontTitleCard = ({frontTitle}) => {
+const FrontOfCard = ({frontTitle}) => {
   return (
     <div className='flip-card-front'>
       <p className="songTitle">{frontTitle}</p>
@@ -8,4 +8,4 @@ const FrontTitleCard = ({frontTitle}) => {
   )
 }
 
-export default FrontTitleCard
+export default FrontOfCard

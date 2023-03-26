@@ -11,6 +11,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 :root {
@@ -30,22 +31,26 @@ body{
   -webkit-text-size-adjust: 100%;
 }
 
-.wrapper{
+div{
+  color: black;
+}
+
+button{
+  cursor: pointer;
+}
+
+.app_wrapper{
   width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.game{
+.game_container{
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
-
-button{
-  cursor: pointer;
 }
 
 /*Flip card setup below*/
@@ -74,17 +79,10 @@ button{
   border-radius: 20px;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/*.flip-card:hover .flip-card-inner {
-  transform: rotateX(180deg);
-}*/
-
-  /* Do an horizontal flip when you move the mouse over the flip box container */
 .flipped{
   transform: rotateX(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -111,20 +109,20 @@ button{
   transform: rotateX(180deg);
 }
 
-.menu{
+.menu_container{
   color: black;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.upper_UI, .bottom_UI{
+.game_upper_UI, .game_bottom_UI{
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.upper_UI > .btn_main, .bottom_UI > .btn_main{
+.game_upper_UI > .btn_main, .game_bottom_UI > .btn_main{
   padding: 10px;
   width: 25%;
   border-radius: 20px;
@@ -133,25 +131,25 @@ button{
   border: 5px rgb(30, 44, 255) solid;
 }
 
-.upper_UI > .btn_main:hover, .bottom_UI > .btn_main:hover{
+.game_upper_UI > .btn_main:active, .game_bottom_UI > .btn_main:active{
   background-color: rgb(30, 210, 255);
 }
 
-.bottom_UI > .btn_main{
+.game_bottom_UI > .btn_main{
   width: 45%;
   color: white;
 }
 
-.bottom_UI > .btn_main:disabled{
+.game_bottom_UI > .btn_main:disabled{
   color: rgba(255, 255, 255, 0.386);
 }
 
-.bottom_UI > p{
+.game_bottom_UI > p{
   color: black;
   align-self: center;
 }
 
-button:hover{
+button:active{
   background-color: rgb(30, 210, 255);
 }
 
@@ -161,6 +159,24 @@ button:hover{
   height: 50px;
   border-radius: 10px;
   transition: padding 100ms ease;
+}
+
+.btn_navigation:first-child{
+  width: 100%;
+  height: 19px;
+  transform: translateY(-2px);
+  background-color:rgb(176, 237, 204);
+  border: none
+}
+
+.btn_navigation:last-child{
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  height: 19px;
+  transform: translateY(2px);
+  background-color:rgb(176, 237, 204);
+  border: none;
 }
 
 .songTitle{
@@ -173,26 +189,31 @@ button:hover{
   color: white;
 }
 
-p{
-  color: black;
-}
-
+/*song list menu setup*/
 .listOfAllSongs{
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  height: 200px;
-  overflow-y: scroll;
+  justify-content:flex-start;
+  overflow-y: auto;
   overflow-x: hidden;
-  text-align:justify;
+  height: 300px;
 }
 
-.listOfAllSongs > p:hover{
+.single_item{
+  color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.single_item:hover{
   cursor: pointer;
 }
 
 .item_chosen{
-  background-color: aqua;
+  background-color: rgb(119, 243, 246);
+  color: rgba(37, 34, 226, 0.938);
+  border-radius: 5px;
 }
 
 form > button{

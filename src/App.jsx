@@ -2,7 +2,7 @@ import initialTexts from './resources/texts.json'
 import initialTitles from './resources/titles.json'
 import Game from './Game';
 import Menu from './Menu';
-import SongList from './SongList';
+import SongEdit from './SongEdit';
 import { useState } from 'react';
 
 function App() {
@@ -13,7 +13,7 @@ const [texts, setTexts] = useState(initialTexts);
 const [title, setTitle] = useState(initialTitles);
  
   return (
-  <main className = "wrapper">
+  <main className = "app_wrapper">
   {phase === 0 && <Menu 
     phase = {phase}
     setPhase = {setPhase}
@@ -25,7 +25,7 @@ const [title, setTitle] = useState(initialTitles);
     title = {title}
   /> 
   }
-  {phase === 2 && <SongList
+  {phase === 2 && <SongEdit
     phase = {phase}
     setPhase = {setPhase}
     title = {title}

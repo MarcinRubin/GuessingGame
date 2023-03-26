@@ -1,6 +1,6 @@
 import React from 'react'
-import BackTitleCard from './BackTitleCard'
-import FrontTitleCard from './FrontTitleCard'
+import BackTitleCard from './BackOfCard'
+import FrontTitleCard from './FrontOfCard'
 import { useState } from 'react'
 
 const TitleCard = ({songText, isFlipped, cardTitle}) => {

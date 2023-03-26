@@ -1,7 +1,9 @@
-const SongTitle = ({id, songTitle, handleClick, selectedItem, setSelectedItem}) => {
-
+const SongTitle = ({index, songTitle, selectedItem, setSelectedItem, highlight}) => {
+  
+  //poprawic onClick
   return (
-    <p onClick = {()=>{ setSelectedItem(id); }} className = {id === selectedItem ? "item_chosen" : ""}  >{songTitle}</p>
+    <p className = { index === highlight ? "item_chosen single_item" : "single_item"
+    }  >{songTitle}</p>
   )
 }
 
