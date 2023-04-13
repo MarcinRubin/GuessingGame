@@ -1,18 +1,15 @@
 import React from 'react'
-import BackOfCard from './BackOfCard'
-import FrontOfCard from './FrontOfCard'
-import { useState } from 'react'
 
-const TextCard = ({songText, isFlipped, cardTitle}) => {
+const TextCard = ({songText, isFlipped, cardTitle, colorScheme}) => {
     return (
         <div className = "flip-card flip-card-text">
           <div className = {`flip-card-inner ${isFlipped ? "flipped": "notflipped"}`}>
-            <FrontOfCard
-              frontTitle = {cardTitle}
-            />   
-            <BackOfCard
-              songText = {songText}
-            />
+          <div className={`flip-card-front base ${colorScheme}`}>
+            <p className="songTitle">{cardTitle}</p>
+          </div>  
+          <div className={`flip-card-back base ${colorScheme}`}>
+            <p className="songText" >{songText}</p>
+          </div>
           </div>
         </div>
     )

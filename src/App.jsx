@@ -3,6 +3,7 @@ import initialTitles from './resources/titles.json'
 import Game from './Game';
 import Menu from './Menu';
 import SongEdit from './SongEdit';
+import TeamFight from './TeamFight';
 import { useState } from 'react';
 
 function App() {
@@ -18,13 +19,14 @@ const [title, setTitle] = useState(initialTitles);
     phase = {phase}
     setPhase = {setPhase}
   />}
-  {phase === 1 && <Game 
+
+{phase === 1 && <TeamFight 
     phase = {phase}
     setPhase = {setPhase}
     texts = {texts}
     title = {title}
   /> 
-  }
+}
   {phase === 2 && <SongEdit
     phase = {phase}
     setPhase = {setPhase}

@@ -56,8 +56,10 @@ const SongEdit = ({ phase, setPhase, title, setTitle }) => {
         setSelectedItem={setSelectedItem}
         isFlipped={isFlipped}
       />
-      <button onClick={handleDelete}>DELETE</button>
-      <button onClick={() => setPhase(0)}>RETURN</button>
+      <div className="game_bottom_UI">
+      <button className = "btn_main" onClick={handleDelete}>DELETE</button>
+      <button className = "btn_main" onClick={() => setPhase(0)}>RETURN</button>
+      </div>
       <form onSubmit={handleSubmit}>
         <input type="file" required accept=".txt,.json" onChange={handleLoadFile}></input>
         <button type="submit">LOAD</button>

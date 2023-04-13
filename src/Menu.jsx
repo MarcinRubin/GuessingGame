@@ -4,7 +4,7 @@ const Menu = ({phase, setPhase}) => {
 
   return (
     <div className = "menu_container">
-        <button className = "btn_start" onClick = {() => setPhase(1)}>START GAME</button>
+        <button className = "btn_start" onClick = {() => setPhase(1)}>TEAM FIGHT</button>
         <button className = "btn_start" onClick = {() => setPhase(2)}>SONG LIST</button>
     </div>
   )

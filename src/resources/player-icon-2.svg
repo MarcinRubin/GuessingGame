@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.697601mm"
+   height="25.185724mm"
+   viewBox="0 0 14.697601 25.185724"
+   version="1.1"
+   id="svg4049"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="rysunek-1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4051"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.7483165"
+     inkscape:cx="265.93026"
+     inkscape:cy="541.88301"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4046" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-116.96797,1.6543723)">
+    <path
+       id="path745"
+       style="opacity:0.99;fill:#ed7c7d;fill-opacity:1;stroke:#e22c30;stroke-width:1.465;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       d="m 124.31718,-0.92187221 a 4.4910297,4.4910297 0 0 0 -4.4912,4.49069001 4.4910297,4.4910297 0 0 0 1.39991,3.255607 c -2.05097,1.56659 -3.44475,4.4144902 -3.44475,6.5148502 0,3.04661 -0.2194,6.13487 0.11111,7.87549 0.33051,1.74061 4.46677,1.56062 6.49572,1.56062 1.92953,0 5.944,0.31826 6.30815,-1.47174 0.36414,-1.79 0.18396,-4.85957 0.18396,-7.96437 0,-2.14349 -1.39783,-4.9810802 -3.45353,-6.5329402 a 4.4910297,4.4910297 0 0 0 1.38183,-3.237517 4.4910297,4.4910297 0 0 0 -4.4912,-4.49069001 z"
+       inkscape:export-filename="..\..\react_learn\guessingGame\src\resources\player-icon-2.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

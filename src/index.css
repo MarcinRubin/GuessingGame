@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --primaryRed: hsla(359, 75, 71, 100);
+  --primaryBlue: hsla(231, 83, 75, 100);
+
 }
 
 body{
@@ -12,6 +15,7 @@ body{
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  background-image: url("./gui/background.svg");
 }
 
 :root {
@@ -31,14 +35,6 @@ body{
   -webkit-text-size-adjust: 100%;
 }
 
-div{
-  color: black;
-}
-
-button{
-  cursor: pointer;
-}
-
 .app_wrapper{
   width: 320px;
   display: flex;
@@ -53,6 +49,66 @@ button{
   gap: 5px;
 }
 
+.game_container2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.game_upper_UI2, .game_bottom_UI2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.btn_main_2{
+  --primaryRed: hsl(359, 75, 71);
+  --primaryBlue: hsl(231, 83, 75);
+  font-size: 20px;
+  width: 22%;
+  aspect-ratio: 1 / 0.9;
+  border-radius: 30px;
+  background-color: dodgerblue;
+  color: white;
+  border: 7px black solid;
+  background: linear-gradient(to top right, hsl(231, 83%, 75%) 0%, hsl(359, 75%, 71%) 100%);
+}
+
+.icon_container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+img{
+  height: 100%;
+}
+
+.timer{
+  font-size: 30px;
+  display: flex;
+  border: 6px black solid;
+  height: 90%;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
+.btn_main_2:active{
+  background-color: rgb(30, 210, 255);
+}
+
 /*Flip card setup below*/
 .flip-card {
   background-color: transparent;
@@ -61,11 +117,11 @@ button{
 }
 
 .flip-card-title{
-  height: 80px;
+  height: 12%;
 }
 
 .flip-card-text{
-  height: 300px;
+  height: 52%;
 }
 
 /* This container is needed to position the front and back side */
@@ -88,7 +144,6 @@ button{
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  border: 10px rgb(30, 44, 255) solid;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   display: flex;
@@ -97,16 +152,121 @@ button{
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: dodgerblue;
-  color: black;
-}
 
 /* Style the back side */
 .flip-card-back {
   display: flex;
-  background-color: dodgerblue;
+  flex-direction: column;
+  justify-content: space-around;
   transform: rotateX(180deg);
+}
+
+.base{
+  background: linear-gradient(90deg, hsl(231, 93%, 75%) 0, hsl(359, 70%, 60%) 100%);
+  background-size: 100%;
+  background-position: center;
+  border: 10px solid black;
+  font-size: 28px;
+  transition: background-size 1s, background-position 1s;
+  
+}
+
+.red{
+  background-size: 1000%;
+  background-position: right;
+}
+
+.blue{
+  background-size: 1000%;
+  background-position: left;
+}
+
+.team-fight-settings-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+
+}
+
+.team-fight-settings{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  font-size: 28px;
+}
+
+.team-fight-label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-fight-settings-label > p{
+  text-decoration: underline;
+}
+
+.team-fight-settings-controls{
+  padding-left:  5%;
+  padding-right: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftTriangle{
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:30px solid white; 
+  border-left: none;
+  background-color: transparent;
+  
+}
+
+.rightTriangle{
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-left: 30px solid white; 
+  border-right: none;
+  background-color: transparent;
+}
+
+.rightTriangle:active, .leftTriangle:active{
+  background-color: transparent;
+  border-left-color: black;
+  border-right-color: black;
+}
+
+.progress-bar-wrapper{
+  --len: 7;
+  display: grid;
+  grid-template-columns: repeat(var(--len), 1fr);
+  height: 1.5%;
+  width: 95%;
+  justify-items: stretch;
+}
+
+.progress-bar-wrapper > div{
+  border: 1px black solid;
+  height: 100%;
+  background-color: white;
+}
+
+.progress-bar-wrapper > div:first-child{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.progress-bar-wrapper > div:last-child{
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .menu_container{
@@ -122,7 +282,7 @@ button{
   width: 100%;
 }
 
-.game_upper_UI > .btn_main, .game_bottom_UI > .btn_main{
+.btn_main{
   padding: 10px;
   width: 25%;
   border-radius: 20px;
@@ -131,16 +291,15 @@ button{
   border: 5px rgb(30, 44, 255) solid;
 }
 
-.game_upper_UI > .btn_main:active, .game_bottom_UI > .btn_main:active{
+.btn_main:active{
   background-color: rgb(30, 210, 255);
 }
 
 .game_bottom_UI > .btn_main{
   width: 45%;
-  color: white;
 }
 
-.game_bottom_UI > .btn_main:disabled{
+.btn_main:disabled{
   color: rgba(255, 255, 255, 0.386);
 }
 
@@ -162,21 +321,50 @@ button:active{
 }
 
 .btn_navigation:first-child{
+  background-color:rgb(176, 237, 204);
   width: 100%;
   height: 19px;
-  transform: translateY(-2px);
-  background-color:rgb(176, 237, 204);
-  border: none
+  border: none;
 }
+
+.btn_navigation:first-child::before{
+  --color: black;
+  position: absolute;
+  content: '';
+  left: 140px;
+  transform: translateY(-5px);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid var(--color);
+}
+
 
 .btn_navigation:last-child{
   position: absolute;
-  top: 260px;
+  top: 262px;
   width: 100%;
   height: 19px;
-  transform: translateY(2px);
   background-color:rgb(176, 237, 204);
   border: none;
+}
+
+.btn_navigation:last-child::before{
+  --color: black;
+  position: absolute;
+  content: '';
+  left: 140px;
+  transform: translateY(-5px);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--color);
+}
+
+.btn_navigation:active::before{
+  --color: white;
 }
 
 .songTitle{
@@ -185,6 +373,7 @@ button:active{
 }
 
 .songText{
+  font-size: 16px;
   padding: 10px;
   color: white;
 }
@@ -213,7 +402,6 @@ button:active{
 .item_chosen{
   background-color: rgb(119, 243, 246);
   color: rgba(37, 34, 226, 0.938);
-  border-radius: 5px;
 }
 
 form > button{
@@ -223,3 +411,63 @@ form > button{
 form > input{
   color: black;
 }
+
+button{
+  cursor: pointer;
+}
+
+.game_bottom_UI{
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+
+.btn_start_2{
+  position: absolute;
+  padding: 10px;
+  font-size: 28px;
+  border: 8px black solid;
+  width: 60%;
+  aspect-ratio: 1 / 0.3;
+  border-radius: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform 1s, background-position 1s, background-size 1s;
+}
+
+.fixed{
+  position: absolute;
+  padding: 10px;
+  font-size: 28px;
+  border: 8px black solid;
+  width: 50%;
+  aspect-ratio: 1 / 0.3;
+  border-radius: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform 1s, left 1s, background-position 1s, background-size 1s;
+}
+
+.btn_start_2_shifted{
+  transform: translate(-50%, -70%);
+
+}
+
+.fixed2{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: left 1s, transform 1s;
+}
+
+.lefty{
+  left: 0;
+  transform: translate(0, 30%);
+}
+
+.righty{
+  left: 100%;
+  transform: translate(-100%, 30%);
+}
+
+

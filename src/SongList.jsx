@@ -1,5 +1,4 @@
 import React from 'react'
-import FrontOfCard from './FrontOfCard'
 import SongTitle from './SongTitle'
 
 const SongList = ({ title, selectedItem, setSelectedItem, isFlipped }) => {
@@ -24,12 +23,12 @@ const SongList = ({ title, selectedItem, setSelectedItem, isFlipped }) => {
   return (
     <div className="flip-card flip-card-text">
       <div className={`flip-card-inner ${isFlipped ? "flipped" : "notflipped"}`}>
-        <FrontOfCard
-          frontTitle = "LALALALA"
-        /> 
+      <div className='flip-card-front'>
+          <p className="songTitle">"LALALA"</p>
+        </div>  
         <div className="listOfAllSongs flip-card-back">
         <button className = "btn_navigation" onClick = {handleUp}></button>
-          {title.slice(minList(title.length, selectedItem, MAX_SONGS), selectedItem + 10).map((item, index) => (
+        {title.slice(minList(title.length, selectedItem, MAX_SONGS), selectedItem + 10).map((item, index) => (
             <SongTitle
               key={item.id}
               index={index}
