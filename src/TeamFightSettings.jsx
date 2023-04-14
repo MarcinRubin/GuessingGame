@@ -23,11 +23,11 @@ const TeamFightSettings = ({settings, setSettings, animation, setAnimation, team
     <div className = "game_upper_UI2">
     <button className = {`btn_main_2 base ${settings.colorScheme}`}>||</button>
     <div className="icon_container">
-        <img src="./src/resources/player-icon.svg" alt="player"></img>
+        <img src="./resources/player-icon.svg" alt="player"></img>
         <div className="timer">
           <p className="timerDisplay">{settings.remainingTime}</p>
         </div>
-        <img src="./src/resources/player-icon-2.svg" alt="player2"></img>
+        <img src="./resources/player-icon-2.svg" alt="player2"></img>
     </div>
     <button className={`btn_main_2 base ${settings.colorScheme}`} onClick = {handleReset}>X</button>
     </div>
