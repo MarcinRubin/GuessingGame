@@ -22,11 +22,11 @@ const SongList = ({ title, selectedItem, setSelectedItem, isFlipped }) => {
   
   return (
     <div className="flip-card flip-card-text">
-      <div className={`flip-card-inner ${isFlipped ? "flipped" : "notflipped"}`}>
+      <div className={`flip-card-inner base-songedit ${isFlipped ? "flipped" : "notflipped"}`}>
       <div className='flip-card-front'>
           <p className="songTitle">"LALALA"</p>
         </div>  
-        <div className="listOfAllSongs flip-card-back">
+        <div className="flip-card-back listOfAllSongs">
         <button className = "btn_navigation" onClick = {handleUp}></button>
         {title.slice(minList(title.length, selectedItem, MAX_SONGS), selectedItem + 10).map((item, index) => (
             <SongTitle

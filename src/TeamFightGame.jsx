@@ -3,7 +3,7 @@ import TitleCard from "./TitleCard"
 import TextCard from "./TextCard"
 import ProgressBar from "./ProgressBar"
 
-const TeamFightGame = ({texts, title, animation, setAnimation, settings, setTeamFightPhase, handleReset, punctation, setPunctation}) => {
+const TeamFightGame = ({texts, title, animation, setAnimation, settings, setSettings, teamFightPhase, setTeamFightPhase, handleReset, actualRound, punctation, setPunctation}) => {
     
   const [songText, setSongText] = useState('');
   const [songTitle, setSongTitle] = useState('');
@@ -22,9 +22,12 @@ const TeamFightGame = ({texts, title, animation, setAnimation, settings, setTeam
         setTimeout(()=>{
           setTeamFightPhase(1);
         }, 1000)
+        return () => clearInterval(interval); 
       }
       return () => clearInterval(interval); 
-    }, [timer]);
+
+      
+    }, [timer, pause]);
 
     useEffect(() =>{
       setTimeout(()=>{
@@ -61,19 +64,26 @@ const TeamFightGame = ({texts, title, animation, setAnimation, settings, setTeam
       setPunctation([punctation[0] + 1, punctation[1]])
       : setPunctation([punctation[0], punctation[1]+1]);
     }
+
+    const handlePause = () => setPause(!pause);
+
     
     return (
         <>
         <div className = "game_upper_UI2">
-    <button className = {`btn_main_2 base ${settings.colorScheme}`}>||</button>
+    <button className = {`btn_main_2 base ${settings.colorScheme}`} onClick = {handlePause}>||</button>
     <div className="icon_container">
+    <div className="player-icon">
         <img src="src/resources/player-icon.svg" alt="player"></img>
         <p>{punctation[0]}</p>
+      </div>
         <div className="timer">
           <p className="timerDisplay">{timer}</p>
         </div>
+        <div className="player-icon">
         <img src="src/resources/player-icon-2.svg" alt="player2"></img>
         <p>{punctation[1]}</p>
+        </div>
     </div>
     <button className={`btn_main_2 base ${settings.colorScheme}`} onClick = {handleReset}>X</button>
     </div>
@@ -84,6 +94,9 @@ const TeamFightGame = ({texts, title, animation, setAnimation, settings, setTeam
     />
     <ProgressBar
     roundsCounter = {settings.roundsCounter}
+    actualRound = {actualRound}
+    colorScheme = {settings.colorScheme}
+    teamFightPhase = {teamFightPhase}
     />
     <TextCard
       songText = {songText}

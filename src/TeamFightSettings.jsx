@@ -3,7 +3,7 @@ import SettingsCard from './SettingsCard'
 import ProgressBar from './ProgressBar'
 import { useEffect } from 'react'
 
-const TeamFightSettings = ({settings, setSettings, animation, setAnimation, teamFightPhase, setTeamFightPhase, handleReset}) => {
+const TeamFightSettings = ({settings, setSettings, animation, setAnimation, teamFightPhase, setTeamFightPhase, actualRound, handleReset}) => {
 
   useEffect(() =>{
     setTimeout(()=>{
@@ -23,11 +23,14 @@ const TeamFightSettings = ({settings, setSettings, animation, setAnimation, team
     <div className = "game_upper_UI2">
     <button className = {`btn_main_2 base ${settings.colorScheme}`}>||</button>
     <div className="icon_container">
-        <img src="./resources/player-icon.svg" alt="player"></img>
+      <div className="player-icon">
+        <img src="./src/resources/player-icon.svg" alt="player"></img>
+        <p></p>
+      </div>
         <div className="timer">
           <p className="timerDisplay">{settings.remainingTime}</p>
         </div>
-        <img src="./resources/player-icon-2.svg" alt="player2"></img>
+        <img src="./src/resources/player-icon-2.svg" alt="player2"></img>
     </div>
     <button className={`btn_main_2 base ${settings.colorScheme}`} onClick = {handleReset}>X</button>
     </div>
@@ -38,6 +41,9 @@ const TeamFightSettings = ({settings, setSettings, animation, setAnimation, team
 />
 <ProgressBar
 roundsCounter = {settings.roundsCounter}
+actualRound = {actualRound}
+colorScheme = {settings.colorScheme}
+teamFightPhase= {teamFightPhase}
 />
 <SettingsCard
   isFlipped = {animation.isFlipped}

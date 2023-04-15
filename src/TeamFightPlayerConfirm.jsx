@@ -4,9 +4,10 @@ import ConfirmCard from "./ConfirmCard"
 import ProgressBar from "./ProgressBar"
 
 
-const TeamFightPlayerConfirm = ({settings, setSettings, animation, setAnimation, teamFightPhase, setTeamFightPhase, handleReset, punctation}) => {
+const TeamFightPlayerConfirm = ({settings, setSettings, animation, setAnimation, teamFightPhase, setTeamFightPhase, handleReset, actualRound, setActualRound, punctation}) => {
 
-  useEffect(() =>{
+useEffect(() =>{
+  if(settings.colorScheme === "neutral" || settings.colorScheme === "red" ) setActualRound(actualRound + 1);
     setTimeout(()=>{
       setAnimation({isFlipped: !animation.isFlipped, startShifted: !animation.startShifted});
       settings.colorScheme === "blue" ?
@@ -27,13 +28,17 @@ const TeamFightPlayerConfirm = ({settings, setSettings, animation, setAnimation,
     <div className = "game_upper_UI2">
     <button className = {`btn_main_2 base ${settings.colorScheme}`}>||</button>
     <div className="icon_container">
-        <img src="src/resources/player-icon.svg" alt="player"></img>
-        <p>{punctation[0]}</p>
+        <div className="player-icon">
+          <img src="src/resources/player-icon.svg" alt="player"></img>
+          <p>{punctation[0]}</p>
+        </div>
         <div className="timer">
           <p className="timerDisplay">{settings.remainingTime}</p>
         </div>
+        <div className="player-icon">
         <img src="src/resources/player-icon-2.svg" alt="player2"></img>
         <p>{punctation[1]}</p>
+        </div>
     </div>
     <button className={`btn_main_2 base ${settings.colorScheme}`} onClick = {handleReset}>X</button>
     </div>
@@ -44,6 +49,9 @@ const TeamFightPlayerConfirm = ({settings, setSettings, animation, setAnimation,
     />
     <ProgressBar
       roundsCounter = {settings.roundsCounter}
+      actualRound = {actualRound}
+      colorScheme = {settings.colorScheme}
+      teamFightPhase= {teamFightPhase}
     />
     <ConfirmCard
       animation = {animation}

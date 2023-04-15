@@ -1,6 +1,5 @@
 import initialTexts from './resources/texts.json'
 import initialTitles from './resources/titles.json'
-import Game from './Game';
 import Menu from './Menu';
 import SongEdit from './SongEdit';
 import TeamFight from './TeamFight';

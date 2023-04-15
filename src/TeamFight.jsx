@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
-import TitleCard from './TitleCard'
-import TextCard from './TextCard'
 import TeamFightSettings from './TeamFightSettings'
 import TeamFightPlayerConfirm from './TeamFightPlayerConfirm'
 import TeamFightGame from './TeamFightGame'
+import EndingScreen from './EndingScreen'
 
 const TeamFight = ({phase, setPhase, texts, title}) => {
     const [teamFightPhase, setTeamFightPhase] = useState(0);
+    const [actualRound, setActualRound] = useState(0);
     const[settings, setSettings] = useState(
       {
         chanceCounter: 3,
@@ -38,10 +38,11 @@ const TeamFight = ({phase, setPhase, texts, title}) => {
       setAnimation = {setAnimation}
       teamFightPhase = {teamFightPhase}
       setTeamFightPhase = {setTeamFightPhase}
+      actualRound = {actualRound}
       handleReset = {handleReset}
       />}
 
-      {teamFightPhase === 1 &&
+      {teamFightPhase === 1 && actualRound < settings.roundsCounter + 1 &&
         <TeamFightPlayerConfirm
         settings = {settings}
         setSettings = {setSettings}
@@ -50,6 +51,8 @@ const TeamFight = ({phase, setPhase, texts, title}) => {
         teamFightPhase = {teamFightPhase}
         setTeamFightPhase = {setTeamFightPhase}
         handleReset = {handleReset}
+        actualRound = {actualRound}
+        setActualRound = {setActualRound}
         punctation = {punctation}
       />}
 
@@ -60,11 +63,19 @@ const TeamFight = ({phase, setPhase, texts, title}) => {
         animation = {animation}
         setAnimation = {setAnimation}
         settings = {settings}
+        setSettings = {setSettings}
+        teamFightPhase = {teamFightPhase}
         setTeamFightPhase = {setTeamFightPhase}
         handleReset = {handleReset}
+        actualRound = {actualRound}
         punctation = {punctation}
         setPunctation = {setPunctation}
       />}
+      {
+        actualRound === settings.roundsCounter + 1 &&
+        <EndingScreen
+        />
+      }
     </div>
   )
   

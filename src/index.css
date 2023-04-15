@@ -168,9 +168,7 @@ img{
   border: 10px solid black;
   font-size: 28px;
   transition: background-size 1s, background-position 1s;
-  
 }
-
 .red{
   background-size: 1000%;
   background-position: right;
@@ -187,7 +185,6 @@ img{
   flex-direction: column;
   gap: 20px;
   justify-content: flex-start;
-
 }
 
 .team-fight-settings{
@@ -269,6 +266,37 @@ img{
   border-top-right-radius: 20px;
 }
 
+.progress-bar-wrapper > .actual-rounds-blue{
+  background-color: blue;
+}
+
+.progress-bar-wrapper > .actual-rounds-red{
+  background-color: red;
+}
+
+.progress-bar-wrapper > .blink-red{
+  background-color: red;
+  animation: blinkingBackground-red 1s;
+}
+.progress-bar-wrapper > .blink-blue{
+  background-color: blue;
+  animation: blinkingBackground-blue 1s;
+}
+
+@keyframes blinkingBackground-red{
+  0%		{ background-color: white;}
+  33%		{ background-color: red;}
+  66%		{ background-color: white;}
+  100%		{ background-color: red;}
+}
+
+@keyframes blinkingBackground-blue{
+  0%		{ background-color: white;}
+  33%		{ background-color: blue;}
+  66%		{ background-color: white;}
+  100%		{ background-color: blue;}
+}
+
 .menu_container{
   color: black;
   display: flex;
@@ -282,13 +310,18 @@ img{
   width: 100%;
 }
 
+
 .btn_main{
-  padding: 10px;
-  width: 25%;
-  border-radius: 20px;
+  --primaryRed: hsl(359, 75, 71);
+  --primaryBlue: hsl(231, 83, 75);
+  font-size: 20px;
+  width: 22%;
+  aspect-ratio: 1 / 0.9;
+  border-radius: 30px;
   background-color: dodgerblue;
   color: white;
-  border: 5px rgb(30, 44, 255) solid;
+  border: 7px black solid;
+  background: linear-gradient(to top right, hsl(231, 83%, 75%) 0%, hsl(359, 75%, 71%) 100%);
 }
 
 .btn_main:active{
@@ -342,8 +375,7 @@ button:active{
 
 
 .btn_navigation:last-child{
-  position: absolute;
-  top: 262px;
+  bottom: 0;
   width: 100%;
   height: 19px;
   background-color:rgb(176, 237, 204);
@@ -378,14 +410,21 @@ button:active{
   color: white;
 }
 
+.base-songedit{
+  background: linear-gradient(90deg, hsl(231, 93%, 75%) 0, hsl(359, 70%, 60%) 100%);
+  background-size: 100%;
+  background-position: center;
+  border: 10px solid black;
+}
+
 /*song list menu setup*/
 .listOfAllSongs{
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-items: flex-start;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 300px;
+  height: 100%
 }
 
 .single_item{
@@ -470,4 +509,19 @@ button{
   transform: translate(-100%, 30%);
 }
 
+.player-icon{
+  height: 100%;
+  position: relative;
+}
 
+.player-icon > img{
+  position: left;
+}
+
+.player-icon > p{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 10%;
+}

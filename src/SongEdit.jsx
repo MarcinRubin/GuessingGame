@@ -44,7 +44,7 @@ const SongEdit = ({ phase, setPhase, title, setTitle }) => {
 
   return (
 
-    <div className="game_container">
+    <div className="game_container2">
       <TitleCard
         songText={title[selectedItem].title}
         isFlipped={isFlipped}
