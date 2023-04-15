@@ -30,7 +30,7 @@ const TeamFightSettings = ({settings, setSettings, animation, setAnimation, team
         <div className="timer">
           <p className="timerDisplay">{settings.remainingTime}</p>
         </div>
-        <img src="./src/resources/player-icon-2.svg" alt="player2"></img>
+        <img src="./resources/player-icon-2.svg" alt="player2"></img>
     </div>
     <button className={`btn_main_2 base ${settings.colorScheme}`} onClick = {handleReset}>X</button>
     </div>
