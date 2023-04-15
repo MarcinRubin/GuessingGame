@@ -24,13 +24,13 @@ const TeamFightSettings = ({settings, setSettings, animation, setAnimation, team
     <button className = {`btn_main_2 base ${settings.colorScheme}`}>||</button>
     <div className="icon_container">
       <div className="player-icon">
-        <img src="./src/resources/player-icon.svg" alt="player"></img>
+        <img src="https://raw.githubusercontent.com/MarcinRubin/GuessingGame/291af77094044998af7d32fcbf1a021fbd9f2baf/src/resources/player-icon.svg" alt="player"></img>
         <p></p>
       </div>
         <div className="timer">
           <p className="timerDisplay">{settings.remainingTime}</p>
         </div>
-        <img src="./resources/player-icon-2.svg" alt="player2"></img>
+        <img src="https://raw.githubusercontent.com/MarcinRubin/GuessingGame/291af77094044998af7d32fcbf1a021fbd9f2baf/src/resources/player-icon-2.svg" alt="player2"></img>
     </div>
     <button className={`btn_main_2 base ${settings.colorScheme}`} onClick = {handleReset}>X</button>
     </div>

@@ -74,14 +74,14 @@ const TeamFightGame = ({texts, title, animation, setAnimation, settings, setSett
     <button className = {`btn_main_2 base ${settings.colorScheme}`} onClick = {handlePause}>||</button>
     <div className="icon_container">
     <div className="player-icon">
-        <img src="src/resources/player-icon.svg" alt="player"></img>
+        <img src="https://raw.githubusercontent.com/MarcinRubin/GuessingGame/291af77094044998af7d32fcbf1a021fbd9f2baf/src/resources/player-icon.svg" alt="player"></img>
         <p>{punctation[0]}</p>
       </div>
         <div className="timer">
           <p className="timerDisplay">{timer}</p>
         </div>
         <div className="player-icon">
-        <img src="src/resources/player-icon-2.svg" alt="player2"></img>
+        <img src="https://raw.githubusercontent.com/MarcinRubin/GuessingGame/291af77094044998af7d32fcbf1a021fbd9f2baf/src/resources/player-icon-2.svg" alt="player2"></img>
         <p>{punctation[1]}</p>
         </div>
     </div>
