@@ -33,7 +33,7 @@ const TeamFightGame = ({texts, title, animation, setAnimation, settings, setSett
       setTimeout(()=>{
         setAnimation({isFlipped: !animation.isFlipped, startShifted: !animation.startShifted});
       }, 50);
-    }, [remainingChance]);
+    }, [remainingChance, punctation]);
 
     //AFTER FLIP ASSIGN NEW TITLE
     useEffect(() =>{
@@ -60,9 +60,12 @@ const TeamFightGame = ({texts, title, animation, setAnimation, settings, setSett
     }
 
     const handleYay = (e) =>{
-      settings.colorScheme === "blue" ? 
-      setPunctation([punctation[0] + 1, punctation[1]])
+      
+      setAnimation({startShifted: !animation.startShifted, isFlipped: !animation.isFlipped});
+      setTimeout(()=>{
+      settings.colorScheme === "blue" ?  setPunctation([punctation[0] + 1, punctation[1]])
       : setPunctation([punctation[0], punctation[1]+1]);
+    }, 1000)
     }
 
     const handlePause = () => setPause(!pause);
